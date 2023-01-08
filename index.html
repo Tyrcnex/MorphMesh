@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morphing Mesh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p><strong>NOTE: CLOSED MESHES AND SAME AMOUNT OF VERTICES IN EACH MESH ARE REQUIRED.</strong></p>
+    <textarea type="text" id="inputObj1" placeholder="Enter in your raw obj data here..."></textarea>
+    <div style="height:20px;"></div>
+    <textarea type="text" id="inputObj2" placeholder="Enter in your raw obj data here..."></textarea>
+    <div style="height:20px;"></div>
+    <textarea type="text" id="outputData" placeholder="Outputted data here..."></textarea>
+    <div style="height:20px;"></div>
+    <button id="convert">▶ Convert</button>
+
+    <script src="parseObj.js"></script>
+    <script src="normalize.js"></script>
+    <script src="interpolate.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
